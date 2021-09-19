@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage("build job"){
-            mvn clean package
+           sh' mvn clean package'
             echo "building of job is done"
            
         }
