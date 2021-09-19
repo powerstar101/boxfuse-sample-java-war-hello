@@ -1,9 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage(git clone){
-            git url:https://github.com/tyrion9999/boxfuse-sample-java-war-hello.git
-        }
+        
         stage(build job){
             mvn clean package
             echo "building of job is done"
