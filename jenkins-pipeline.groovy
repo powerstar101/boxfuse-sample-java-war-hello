@@ -6,6 +6,7 @@ pipeline{
         }
         stage(build job){
             mvn clean package
+            echo "building of job is done"
            
         }
         stage(upload artifacts){
