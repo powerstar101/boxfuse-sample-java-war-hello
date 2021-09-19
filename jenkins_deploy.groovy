@@ -1,10 +1,10 @@
 pipeline{
     agent any
     stages{
-        stage("installing tomcat"){
+        stage("installing tomcat& deploy"){
             steps{
-                sh ' sudo scp -i /tmp/dev_mum.pem tomcatinstall.sh ec2-user@$serverip:/tmp'
-               sh' sudo ssh -i /tmp/dev_mum.pem ec2-user@$serverip "chmod +x /tmp/tomcatinstall.sh && bash /tmp/tomcatinstall.sh"'
+                sh ' sudo scp -i /tmp/dev_mum.pem tomcatinstall.sh deploy.sh ec2-user@$serverip:/tmp'
+               sh' sudo ssh -i /tmp/dev_mum.pem ec2-user@$serverip "chmod +x /tmp/*.sh && bash /tmp/tomcatinstall.sh && bash /tmp/deploy.sh $jobname $branchname $build_number "'
             }
         }
     }
