@@ -1,12 +1,12 @@
 pipeline{
     agent any
     parameters{
-        choice(name: 'Environments', :['dev','qa','perf','uat','prod'],description:'')
-        string(name: 'serverip', choices:[''],description:'')
-        string(name: 'bucketname', choices:['Khalisi'],description:'')
-        string(name: 'jobname', choices:[''],description:'')
-        string(name: 'branch', choices:[''],description:'')
-        string(name: 'buildnumber',choices[''],description:'')
+        choice(name: 'Environments', choices:['dev','qa','perf','uat','prod'],description:'')
+        string(name: 'serverip', Default Value:[''],description:'')
+        string(name: 'bucketname', Default Value:['Khalisi'],description:'')
+        string(name: 'jobname', Default Value:['deploy'],description:'')
+        string(name: 'branch', Default Value:['heeman'],description:'')
+        string(name: 'buildnumber',Default Value['20'],description:'')
     }
     stages{
         stage('deploy'){
