@@ -13,7 +13,7 @@ pipeline{
              }
               stage('upload artifacts'){
                  steps{
-                     sh """ aws s3 cp /target/hello-*.war  s3://khalisi/$jobname/$branch/$build_number/"""
+                     sh """ aws s3 cp target/hello-*.war  s3://khalisi/$jobname/$branch/$build_number/"""
                  }
              }
              
