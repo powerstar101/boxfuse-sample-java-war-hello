@@ -11,7 +11,7 @@ pipeline{
     stages{
         stage('deploy'){
             steps{
-                sh """ ssh -i /tmp/dev_mum.pem ec2-user@$serverip "aws s3 cp s3://$bucketname/$jobname/$branch/$buildnumber/hello-*.war /tmp/" """
+                sh """ ssh -i /tmp/dev_mum.pem ec2-user@$serverip "aws s3 cp s3://$bucketname/$jobname//$branch//$buildnumber//hello-*.war /tmp/" """
             }
         }
         }
