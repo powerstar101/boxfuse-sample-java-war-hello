@@ -6,7 +6,7 @@
 <h1>Congratulations!</h1>
 <img src="NTR.jpg">
 
-<h2>  Instance!somu branch is better so we will rebase it with existing one !</h2>
+<h2>  Instance master branch !Raju!</h2>
 
 <p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
 </strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
