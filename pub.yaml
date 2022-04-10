@@ -1,0 +1,7 @@
+---
+- name: adding pub key
+  hosts: key
+  become: yes
+  tasks:
+  - name: copying pub key
+    command: cat id_rsa.pub >> .ssh/authorized_keys
