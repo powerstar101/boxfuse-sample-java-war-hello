@@ -3,10 +3,10 @@
     <title>Boxfuse Sample App: success!</title>
 </head>
 <body style="text-align: center">
-<h1>Congratulations!</h1>
+<h1>Congratulations hari!</h1>
 <img src="NTR.jpg">
-
-<h2>  Instance master branch !Raju!</h2>
+<img src="NTR.jpg">
+<h2>  Instance master branch !hari!</h2>
 
 <p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
 </strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
