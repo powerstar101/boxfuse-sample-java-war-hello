@@ -3,7 +3,7 @@
     <title>Boxfuse Sample App: success!</title>
 </head>
 <body style="text-align: center">
-<h1>Congratulations hari!</h1>
+<h1>Congratulations bhasha!</h1>
 <img src="NTR.jpg">
 <img src="NTR.jpg">
 <h2>  Instance master branch !hari!</h2>
